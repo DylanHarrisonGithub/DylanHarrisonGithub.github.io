@@ -4651,3 +4651,7 @@ input, select, textarea {
 		}
 
 	}
+
+	.briefcase-button {
+		cursor: pointer;
+	}

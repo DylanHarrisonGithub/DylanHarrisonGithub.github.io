@@ -34,3 +34,8 @@
 			transform: none;
 			opacity: 1;
 		}
+
+		
+	.briefcase-button {
+		cursor: pointer;
+	}

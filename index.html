@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
+	<body class="is-preload" onload="document.getElementById('briefcase-button').addEventListener('click', (e) => {document.getElementById('main').scrollIntoView({behavior: 'smooth'})})">
 
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
@@ -20,7 +20,7 @@
 				<!-- Intro -->
 					<div id="intro">
 						<h1>Dylan Harrison</h1>
-						<h1 class="icon fa-briefcase"></h1>
+						<h1 class="icon fa-briefcase briefcase-button" id="briefcase-button"></h1>
 						<p>Software Engineering Portfolio</p>
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/dylan-harrison-087558155" class="icon fa-linkedin"></a></li>
@@ -35,7 +35,7 @@
 						<section class="posts">
 							<article>
 								<header>
-									<h2>rpgParty</h2>
+									<h2>rpgParty (Current)</h2>
 									<h5>MongoDB, Express, Angular, Node (MEAN Stack)</h5>
 								</header>
 								<div class="image fit"><img src="images/rpgparty.png" alt="" /></div>
@@ -45,9 +45,7 @@
 									<li>Custom isometric tile rendering engine.</li>
 								</ul>
 								<ul class="actions special">
-										<li><a href="#" class="button">Website&nbsp;&nbsp;<span class="icon fa-globe"></span></a></li>
-									<li><a href="#" class="button">Source&nbsp;&nbsp;<span class="icon fa-github"></span></a></li>
-									<li><a href="#" class="button">In-Depth&nbsp;&nbsp;<span class="icon fa-wordpress"></span></a></li>
+									<li><a href="https://github.com/DylanHarrisonGithub/rpgParty" class="button">Source&nbsp;&nbsp;<span class="icon fa-github"></span></a></li>
 								</ul>
 							</article>
 
@@ -64,9 +62,8 @@
 									<li>Query filter, infinite wall effect.</li>
 								</ul>
 								<ul class="actions special">
-										<li><a href="#" class="button">Website&nbsp;&nbsp;<span class="icon fa-globe"></span></a></li>
-									<li><a href="#" class="button">Source&nbsp;&nbsp;<span class="icon fa-github"></span></a></li>
-									<li><a href="#" class="button">In-Depth&nbsp;&nbsp;<span class="icon fa-wordpress"></span></a></li>
+									<li><a href="https://protected-fortress-22053.herokuapp.com/" class="button">Website&nbsp;&nbsp;<span class="icon fa-globe"></span></a></li>
+									<li><a href="https://github.com/DylanHarrisonGithub/MathTalk" class="button">Source&nbsp;&nbsp;<span class="icon fa-github"></span></a></li>
 								</ul>
 							</article>
 
@@ -81,9 +78,8 @@
 									<li>Custom RSA-like encryption algorithm based on Fermat’s little theorem.</li>
 								</ul>
 								<ul class="actions special">
-									<li><a href="#" class="button">Website&nbsp;&nbsp;<span class="icon fa-globe"></span></a></li>
-									<li><a href="#" class="button">Source&nbsp;&nbsp;<span class="icon fa-github"></span></a></li>
-									<li><a href="#" class="button">In-Depth&nbsp;&nbsp;<span class="icon fa-wordpress"></span></a></li>
+									<li><a href="https://github.com/DylanHarrisonGithub/PassMan" class="button">Source&nbsp;&nbsp;<span class="icon fa-github"></span></a></li>
+									<li><a href="https://dylansamcsblog.wordpress.com/2017/08/30/simple-encryption-in-c/" class="button">In-Depth&nbsp;&nbsp;<span class="icon fa-wordpress"></span></a></li>
 								</ul>
 							</article>
 
@@ -99,9 +95,22 @@
 									<li>Provided deliverable code in incremental project development sprints.</li>
 								</ul>
 								<ul class="actions special">
-									<li><a href="#" class="button">Website&nbsp;&nbsp;<span class="icon fa-globe"></span></a></li>
-									<li><a href="#" class="button">Source&nbsp;&nbsp;<span class="icon fa-github"></span></a></li>
-									<li><a href="#" class="button">In-Depth&nbsp;&nbsp;<span class="icon fa-wordpress"></span></a></li>
+									<li><a href="https://github.com/koszuta/CS361" class="button">Source&nbsp;&nbsp;<span class="icon fa-github"></span></a></li>
+								</ul>
+							</article>
+
+							<article>
+								<header>
+									<h2>React Weather App</h2>
+									<h5>React, HTML</h5>
+								</header>
+								<div class="image fit"><img src="images/reactweatherapp.png" alt="" /></div>
+								<ul style="text-align: left; padding-left: 10%;">
+									<li>Get Weather by zip code via OpenWeatherMap API.</li>
+									<li>Get area map via Google Maps API.</li>
+								</ul>
+								<ul class="actions special">
+									<li><a href="https://github.com/DylanHarrisonGithub/react-weather-app" class="button">Source&nbsp;&nbsp;<span class="icon fa-github"></span></a></li>
 								</ul>
 							</article>
 
@@ -116,9 +125,8 @@
 									<li>Measure accuracy and performance of C++ and SIMD Intrinsics implementations of Horner's Method.</li>
 								</ul>
 								<ul class="actions special">
-									<li><a href="#" class="button">Website&nbsp;&nbsp;<span class="icon fa-globe"></span></a></li>
-									<li><a href="#" class="button">Source&nbsp;&nbsp;<span class="icon fa-github"></span></a></li>
-									<li><a href="#" class="button">In-Depth&nbsp;&nbsp;<span class="icon fa-wordpress"></span></a></li>
+									<li><a href="https://github.com/DylanHarrisonGithub/SinApprox" class="button">Source&nbsp;&nbsp;<span class="icon fa-github"></span></a></li>
+									<li><a href="https://dylansamcsblog.wordpress.com/2017/03/11/code-optimization-computer-brains-vs-people-brains/" class="button">In-Depth&nbsp;&nbsp;<span class="icon fa-wordpress"></span></a></li>
 								</ul>
 							</article>
 
@@ -134,9 +142,9 @@
 									<li>Server-side collision physics engine in Python.</li>
 								</ul>
 								<ul class="actions special">
-									<li><a href="#" class="button">Website&nbsp;&nbsp;<span class="icon fa-globe"></span></a></li>
-									<li><a href="#" class="button">Source&nbsp;&nbsp;<span class="icon fa-github"></span></a></li>
-									<li><a href="#" class="button">In-Depth&nbsp;&nbsp;<span class="icon fa-wordpress"></span></a></li>
+									<li><a href="http://our-mediator-166519.appspot.com/" class="button">Website&nbsp;&nbsp;<span class="icon fa-globe"></span></a></li>
+									<li><a href="https://github.com/DylanHarrisonGithub/CSfinalProj" class="button">Source&nbsp;&nbsp;<span class="icon fa-github"></span></a></li>
+									<li><a href="https://dylansamcsblog.wordpress.com/2017/04/15/various-2d-game-and-physics-derivations/" class="button">In-Depth&nbsp;&nbsp;<span class="icon fa-wordpress"></span></a></li>
 								</ul>
 							</article>							
 
@@ -153,9 +161,7 @@
 									<li>Image zoom and pan, transparancy and layers.</li>
 								</ul>
 								<ul class="actions special">
-									<li><a href="#" class="button">Website&nbsp;&nbsp;<span class="icon fa-globe"></span></a></li>
-									<li><a href="#" class="button">Source&nbsp;&nbsp;<span class="icon fa-github"></span></a></li>
-									<li><a href="#" class="button">In-Depth&nbsp;&nbsp;<span class="icon fa-wordpress"></span></a></li>
+									<li><a href="https://github.com/DylanHarrisonGithub/Seurat" class="button">Source&nbsp;&nbsp;<span class="icon fa-github"></span></a></li>
 								</ul>
 							</article>
 
@@ -166,15 +172,13 @@
 								</header>
 								<div class="image fit"><img src="images/tuplegenerator.png" alt="" /></div>
 								<ul style="text-align: left; padding-left: 10%;">
-									<li>Windows Drawing Application</li>
-									<li>Supports Multiple Image Formats. .bmp, .gif, etc.</li>
-									<li>Multiple Drawing Tools. Pencil, Curve, Bucket, etc.</li>
-									<li>Image zoom and pan, transparancy and layers.</li>
+									<li>Recursive algorithm to count over n-tuples.</li>
+									<li>Direct mapping of natural number to n-tuple and inverse.</li>
+									<li>Solve multivariate Diophantine equations by brute-force.</li>
 								</ul>
 								<ul class="actions special">
-									<li><a href="#" class="button">Website&nbsp;&nbsp;<span class="icon fa-globe"></span></a></li>
-									<li><a href="#" class="button">Source&nbsp;&nbsp;<span class="icon fa-github"></span></a></li>
-									<li><a href="#" class="button">In-Depth&nbsp;&nbsp;<span class="icon fa-wordpress"></span></a></li>
+									<li><a href="https://github.com/DylanHarrisonGithub/TupleGenerator" class="button">Source&nbsp;&nbsp;<span class="icon fa-github"></span></a></li>
+									<li><a href="https://dylansamcsblog.wordpress.com/2017/01/09/counting-in-n-dimensions/" class="button">In-Depth&nbsp;&nbsp;<span class="icon fa-wordpress"></span></a></li>
 								</ul>
 							</article>
 							
@@ -185,15 +189,11 @@
 								</header>
 								<div class="image fit"><img src="images/bresenham.jpg" alt="" /></div>
 								<ul style="text-align: left; padding-left: 10%;">
-									<li>Windows Drawing Application</li>
-									<li>Supports Multiple Image Formats. .bmp, .gif, etc.</li>
-									<li>Multiple Drawing Tools. Pencil, Curve, Bucket, etc.</li>
-									<li>Image zoom and pan, transparancy and layers.</li>
+									<li>C# implementation of bresenham line drawing algorithm.</li>
 								</ul>
 								<ul class="actions special">
-									<li><a href="#" class="button">Website&nbsp;&nbsp;<span class="icon fa-globe"></span></a></li>
-									<li><a href="#" class="button">Source&nbsp;&nbsp;<span class="icon fa-github"></span></a></li>
-									<li><a href="#" class="button">In-Depth&nbsp;&nbsp;<span class="icon fa-wordpress"></span></a></li>
+									<li><a href="https://github.com/DylanHarrisonGithub/BresenhamLines" class="button">Source&nbsp;&nbsp;<span class="icon fa-github"></span></a></li>
+									<li><a href="https://dylansamcsblog.wordpress.com/2017/01/19/why-does-bresenhams-line-drawing-algorithm-work/" class="button">In-Depth&nbsp;&nbsp;<span class="icon fa-wordpress"></span></a></li>
 								</ul>
 							</article>
 
@@ -204,15 +204,12 @@
 								</header>
 								<div class="image fit"><img src="images/avltree.jpg" alt="" /></div>
 								<ul style="text-align: left; padding-left: 10%;">
-									<li>Windows Drawing Application</li>
-									<li>Supports Multiple Image Formats. .bmp, .gif, etc.</li>
-									<li>Multiple Drawing Tools. Pencil, Curve, Bucket, etc.</li>
-									<li>Image zoom and pan, transparancy and layers.</li>
+									<li>Python Binary and AVL Tree implementation.</li>
+									<li>Output tree to visual representation.</li>
 								</ul>
 								<ul class="actions special">
-									<li><a href="#" class="button">Website&nbsp;&nbsp;<span class="icon fa-globe"></span></a></li>
-									<li><a href="#" class="button">Source&nbsp;&nbsp;<span class="icon fa-github"></span></a></li>
-									<li><a href="#" class="button">In-Depth&nbsp;&nbsp;<span class="icon fa-wordpress"></span></a></li>
+									<li><a href="https://github.com/DylanHarrisonGithub/AVLTree" class="button">Source&nbsp;&nbsp;<span class="icon fa-github"></span></a></li>
+									<li><a href="https://dylansamcsblog.wordpress.com/2017/02/07/binary-and-avl-search-trees/" class="button">In-Depth&nbsp;&nbsp;<span class="icon fa-wordpress"></span></a></li>
 								</ul>
 							</article>
 
@@ -223,15 +220,11 @@
 								</header>
 								<div class="image fit"><img src="images/mandelbrotviewer.PNG" alt="" /></div>
 								<ul style="text-align: left; padding-left: 10%;">
-									<li>Windows Drawing Application</li>
-									<li>Supports Multiple Image Formats. .bmp, .gif, etc.</li>
-									<li>Multiple Drawing Tools. Pencil, Curve, Bucket, etc.</li>
-									<li>Image zoom and pan, transparancy and layers.</li>
+									<li>Zoom, Pan, and Rotate.</li>
+									<li>Custom Complex number class.</li>
 								</ul>
 								<ul class="actions special">
-									<li><a href="#" class="button">Website&nbsp;&nbsp;<span class="icon fa-globe"></span></a></li>
-									<li><a href="#" class="button">Source&nbsp;&nbsp;<span class="icon fa-github"></span></a></li>
-									<li><a href="#" class="button">In-Depth&nbsp;&nbsp;<span class="icon fa-wordpress"></span></a></li>
+									<li><a href="https://github.com/DylanHarrisonGithub/MandelbrotViewer" class="button">Source&nbsp;&nbsp;<span class="icon fa-github"></span></a></li>
 								</ul>
 							</article>
 
@@ -242,15 +235,11 @@
 								</header>
 								<div class="image fit"><img src="images/hoverrace.PNG" alt="" /></div>
 								<ul style="text-align: left; padding-left: 10%;">
-									<li>Windows Drawing Application</li>
-									<li>Supports Multiple Image Formats. .bmp, .gif, etc.</li>
-									<li>Multiple Drawing Tools. Pencil, Curve, Bucket, etc.</li>
-									<li>Image zoom and pan, transparancy and layers.</li>
+									<li>Real-time physics engine.</li>
+									<li>Easy race-track generation methods.</li>
 								</ul>
 								<ul class="actions special">
-									<li><a href="#" class="button">Website&nbsp;&nbsp;<span class="icon fa-globe"></span></a></li>
-									<li><a href="#" class="button">Source&nbsp;&nbsp;<span class="icon fa-github"></span></a></li>
-									<li><a href="#" class="button">In-Depth&nbsp;&nbsp;<span class="icon fa-wordpress"></span></a></li>
+									<li><a href="https://github.com/DylanHarrisonGithub/HoverRace" class="button">Source&nbsp;&nbsp;<span class="icon fa-github"></span></a></li>
 								</ul>
 							</article>
 
